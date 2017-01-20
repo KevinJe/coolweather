@@ -10,19 +10,26 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="短时预报"
-        android:textSize="20sp"
-        android:textColor="#FFF"
         android:layout_marginLeft="15dp"
         android:layout_marginTop="15dp"
+        android:text="短时预报"
+        android:textColor="#FFF"
+        android:textSize="20sp"
         />
 
-    <LinearLayout
-        android:id="@+id/hourly_forecast_layout"
-        android:layout_width="match_parent"
+    <HorizontalScrollView
+        android:id="@+id/horizontal_scrollview"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
+        android:scrollbars="none"
         >
 
-    </LinearLayout>
+        <LinearLayout
+            android:id="@+id/hourly_forecast_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+        </LinearLayout>
+    </HorizontalScrollView>
 </LinearLayout>
