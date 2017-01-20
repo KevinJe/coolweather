@@ -10,4 +10,11 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
     }
+
+    /*@Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        ChooseAreaFragment fragment = new ChooseAreaFragment();
+        fragment.onBack();
+    }*/
 }
